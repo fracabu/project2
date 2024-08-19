@@ -1,0 +1,37 @@
+<mvc:View controllerName="project2.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+    <Shell>
+        <App>
+            <Page title="EA Dashboard">
+                <content>
+                    <!-- Sezione delle Metriche Principali -->
+                    <f:SimpleForm editable="true" layout="ResponsiveGridLayout">
+                        <f:content>
+                            <Label text="Win Rate Short" />
+                            <Input value="{backtest>/backtest/test/0/winRateShort}" />
+
+                            <Label text="Win Rate Long" />
+                            <Input value="{backtest>/backtest/test/0/winRateLong}" />
+
+                            <!-- Altri campi necessari -->
+                        </f:content>
+                    </f:SimpleForm>
+
+                    <!-- Sezione di Gestione dei Test -->
+                    <Toolbar>
+                        <Button text="Aggiungi Test" press="onAddTest" icon="sap-icon://add" />
+                        <Button text="Elimina Test" press="onDeleteTest" icon="sap-icon://delete" />
+                        <Button text="Salva Test" press="onSaveTests" icon="sap-icon://save" />
+                    </Toolbar>
+
+                    <!-- Lista Dinamica dei Test -->
+                    <List items="{backtest>/backtest/test}">
+                        <StandardListItem
+                            title="{backtest>description}"
+                            description="Win Rate Short: {backtest>winRateShort}, Net Profit: {backtest>netProfit}"
+                            type="Active" />
+                    </List>
+                </content>
+            </Page>
+        </App>
+    </Shell>
+</mvc:View>

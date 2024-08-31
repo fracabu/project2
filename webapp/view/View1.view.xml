@@ -12,7 +12,33 @@
                             <Label text="Win Rate Long" />
                             <Input value="{backtest>/backtest/test/0/winRateLong}" />
 
-                            <!-- Altri campi necessari -->
+                            <!-- Nuova Etichetta e Campo per il Win Rate Totale -->
+                            <Label text="Win Rate Totale" />
+                            <Input value="{backtest>/backtest/test/0/winRateTotal}" />
+
+                            <Label text="Max Drawdown (Absolute)" />
+                            <Input value="{backtest>/backtest/test/0/maxDrawdownAbsolute}" />
+
+                            <Label text="Max Drawdown (Percentage)" />
+                            <Input value="{backtest>/backtest/test/0/maxDrawdownPercentage}" />
+
+                            <Label text="Sharpe Ratio" />
+                            <Input value="{backtest>/backtest/test/0/sharpeRatio}" />
+
+                            <Label text="Profit Factor" />
+                            <Input value="{backtest>/backtest/test/0/profitFactor}" />
+
+                            <Label text="Recovery Factor" />
+                            <Input value="{backtest>/backtest/test/0/recoveryFactor}" />
+
+                            <Label text="Total Trades" />
+                            <Input value="{backtest>/backtest/test/0/totalTrades}" />
+
+                            <Label text="Consecutive Losses" />
+                            <Input value="{backtest>/backtest/test/0/consecutiveLosses}" />
+
+                            <Label text="Max Consecutive Losses Value" />
+                            <Input value="{backtest>/backtest/test/0/maxConsecutiveLossesValue}" />
                         </f:content>
                     </f:SimpleForm>
 

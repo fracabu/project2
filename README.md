@@ -1,3 +1,4 @@
+
 # 📊 EA Dashboard - SAP UI5 Application
 
 **EA Dashboard** è un'applicazione SAP UI5 sviluppata per monitorare e analizzare le metriche di performance degli Expert Advisor (EA) nei test di backtest. Questa dashboard intuitiva consente agli utenti di aggiungere, visualizzare e gestire i dati di test, rendendo il processo di valutazione degli EA più efficiente e strutturato.
@@ -43,15 +44,38 @@
 
 ## 🚀 Avvio dell'Applicazione
 
-Per avviare l'applicazione, utilizza il comando:
+### Prerequisiti
 
-```bash
-npm start
-```
+- **NodeJS**: Assicurati di avere una versione LTS (Long Term Support) di NodeJS installata. [Scarica Node.js](https://nodejs.org)
 
-### 📋 Prerequisiti
+### Passaggi per Avviare l'Applicazione
 
-- **NodeJS**: Assicurati di avere una versione LTS (Long Term Support) di NodeJS installata. ([nodejs.org](https://nodejs.org))
+1. **Clona il repository**:
+
+   ```bash
+   git clone https://github.com/tuo-username/nome-repo.git
+   cd nome-repo
+   ```
+
+2. **Installa le dipendenze**:
+
+   Prima di avviare l'app, assicurati di installare tutte le dipendenze richieste eseguendo:
+
+   ```bash
+   npm install
+   ```
+
+3. **Avvia l'applicazione**:
+
+   Una volta completata l'installazione delle dipendenze, puoi avviare l'applicazione con:
+
+   ```bash
+   npm start
+   ```
+
+4. **Accesso all'app**:
+
+   Dopo aver avviato il server di sviluppo, apri un browser e vai all'indirizzo [http://localhost:8080](http://localhost:8080) (o alla porta specificata dal server) per utilizzare l'applicazione **EA Dashboard**.
 
 ## 🛠️ Struttura dell'App
 

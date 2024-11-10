@@ -1,36 +1,71 @@
-## Application Details
-|               |
-| ------------- |
-|**Generation Date and Time**<br>Sun Aug 18 2024 21:54:39 GMT+0200 (Ora legale dell’Europa centrale)|
-|**App Generator**<br>@sap/generator-fiori-freestyle|
-|**App Generator Version**<br>1.11.2|
-|**Generation Platform**<br>Visual Studio Code|
-|**Template Used**<br>simple|
-|**Service Type**<br>None|
-|**Service URL**<br>N/A
-|**Module Name**<br>project2|
-|**Application Title**<br>App Title|
-|**Namespace**<br>|
-|**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.127.0|
-|**Enable Code Assist Libraries**<br>False|
-|**Enable TypeScript**<br>False|
-|**Add Eslint configuration**<br>False|
+# 📊 EA Dashboard - SAP UI5 Application
 
-## project2
+**EA Dashboard** è un'applicazione SAP UI5 sviluppata per monitorare e analizzare le metriche di performance degli Expert Advisor (EA) nei test di backtest. Questa dashboard intuitiva consente agli utenti di aggiungere, visualizzare e gestire i dati di test, rendendo il processo di valutazione degli EA più efficiente e strutturato.
 
-A Fiori application.
+## 🌟 Funzionalità
 
-### Starting the generated app
+- **Visualizzazione delle Metriche di Performance**: Mostra i principali KPI, come Win Rate, Drawdown, Sharpe Ratio e altro.
+- **Gestione dei Test**: Permette di aggiungere, eliminare e salvare i test, facilitando l’organizzazione delle performance dei backtest.
+- **Lista Dinamica dei Test**: Visualizza un elenco sintetico di test con metriche chiave, come Win Rate e Net Profit, per una consultazione rapida.
 
--   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  In order to launch the generated app, simply run the following from the generated app root folder:
+## 📋 Dettagli delle Metriche
 
+1. **Win Rate Short**: Percentuale di successo nelle operazioni short.
+2. **Win Rate Long**: Percentuale di successo nelle operazioni long.
+3. **Win Rate Totale**: Percentuale complessiva di successo.
+4. **Max Drawdown (Absolute)**: Massimo drawdown in valore assoluto.
+5. **Max Drawdown (Percentage)**: Massimo drawdown in percentuale.
+6. **Sharpe Ratio**: Rapporto rischio-rendimento.
+7. **Profit Factor**: Rapporto tra profitti e perdite.
+8. **Recovery Factor**: Capacità di recuperare dalle perdite.
+9. **Total Trades**: Numero totale di operazioni eseguite.
+10. **Consecutive Losses**: Numero massimo di perdite consecutive.
+11. **Max Consecutive Losses Value**: Valore delle perdite consecutive massime.
+
+## 📦 Configurazione dell'App
+
+### Informazioni Generali
+
+| Dettaglio                     | Valore                        |
+| ----------------------------- | ----------------------------- |
+| **Generazione**               | Sun Aug 18 2024               |
+| **Generatore**                | @sap/generator-fiori-freestyle |
+| **Versione Generatore**       | 1.11.2                        |
+| **Piattaforma di Sviluppo**   | Visual Studio Code            |
+| **Tema UI5**                  | sap_horizon                   |
+| **Versione SAP UI5**          | 1.127.0                       |
+
+### Moduli e Librerie
+
+- **Nome Modulo**: `project2`
+- **Librerie UI5**: `sap.m`, `sap.ui.layout`, `sap.ui.core`
+- **Tema UI5**: `sap_horizon`
+
+## 🚀 Avvio dell'Applicazione
+
+Per avviare l'applicazione, utilizza il comando:
+
+```bash
+npm start
 ```
-    npm start
-```
 
-#### Pre-requisites:
+### 📋 Prerequisiti
 
-1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
+- **NodeJS**: Assicurati di avere una versione LTS (Long Term Support) di NodeJS installata. ([nodejs.org](https://nodejs.org))
 
+## 🛠️ Struttura dell'App
+
+### Componenti della UI
+
+- **Form Principale delle Metriche**: Campo di input per ciascuna metrica chiave.
+- **Toolbar per la Gestione dei Test**: Pulsanti per aggiungere, eliminare e salvare i test.
+- **Lista Dinamica dei Test**: Visualizza le descrizioni dei test, tra cui Win Rate e Net Profit.
+
+### Configurazione del Router
+
+Il routing è configurato per gestire la navigazione e il caricamento asincrono, garantendo che la vista principale sia accessibile immediatamente all’avvio.
+
+## 📄 Licenza
+
+Questo progetto è distribuito sotto la licenza **MIT**.
 
